@@ -63,6 +63,7 @@ val neutralizePdalifeJniOnLoadPatch = rawResourcePatch(
             val soBytes = soFile.readBytes()
             val jniOnLoadOffset = findJniOnLoadOffset(soBytes)
             if (jniOnLoadOffset != -1) {
+                // Patch first 8 bytes of JNI_OnLoad: mov w0, #0; ret (return JNI_ERR)
                 soBytes[jniOnLoadOffset] = 0x52.toByte()
                 soBytes[jniOnLoadOffset + 1] = 0x80.toByte()
                 soBytes[jniOnLoadOffset + 2] = 0x00.toByte()
@@ -77,7 +78,7 @@ val neutralizePdalifeJniOnLoadPatch = rawResourcePatch(
     }
 }
 
-private fun findJniOnLoadOffset(soBytes: ByteArray): Int {
+fun findJniOnLoadOffset(soBytes: ByteArray): Int {
     val jniOnLoadStr = "JNI_OnLoad".toByteArray()
     for (i in 0 until soBytes.size - jniOnLoadStr.size) {
         var match = true
