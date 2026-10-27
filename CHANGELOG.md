@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/steeepaaaan/pdalife-morphe-patches/compare/v1.1.1...v1.1.2) (2026-10-27)
+
+### 🐛 Bug Fixes
+
+* Fix Kotlin compilation errors in NeutralizePdalifeJniOnLoadPatch.kt ([7507a90](https://github.com/steeepaaaan/pdalife-morphe-patches/commit/7507a90bf12f7d9557f4c82e5e2df0955b8a71bb))
+* Remove empty gpr.key from gradle.properties so GPR_KEY env var fallback works in CI ([ae2d4fd](https://github.com/steeepaaaan/pdalife-morphe-patches/commit/ae2d4fddfb6a45d0fed3a390ca57b2f609650890))
+
 ## [1.1.1](https://github.com/steeepaaaan/pdalife-morphe-patches/compare/v1.1.0...v1.1.1) (2026-10-27)
 
 ### 🐛 Bug Fixes

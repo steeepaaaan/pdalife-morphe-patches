@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-27T19:57:01",
-  "description": "## [1.1.1](https://github.com/steeepaaaan/pdalife-morphe-patches/compare/v1.1.0...v1.1.1) (2026-10-27)\n\n### 🐛 Bug Fixes\n\n* Keep libPDALIFE.so, remove only PDALIFE.conf/assets to prevent UnsatisfiedLinkError ([48241fb](https://github.com/steeepaaaan/pdalife-morphe-patches/commit/48241fbe0c044f71a6ffcd112a73adf60a26f1bc))",
-  "download_url": "https://github.com/steeepaaaan/pdalife-morphe-patches/releases/download/v1.1.1/patches-1.1.1.mpp",
+  "created_at": "2026-10-27T20:40:44",
+  "description": "## [1.1.2](https://github.com/steeepaaaan/pdalife-morphe-patches/compare/v1.1.1...v1.1.2) (2026-10-27)\n\n### 🐛 Bug Fixes\n\n* Fix Kotlin compilation errors in NeutralizePdalifeJniOnLoadPatch.kt ([7507a90](https://github.com/steeepaaaan/pdalife-morphe-patches/commit/7507a90bf12f7d9557f4c82e5e2df0955b8a71bb))\n* Remove empty gpr.key from gradle.properties so GPR_KEY env var fallback works in CI ([ae2d4fd](https://github.com/steeepaaaan/pdalife-morphe-patches/commit/ae2d4fddfb6a45d0fed3a390ca57b2f609650890))",
+  "download_url": "https://github.com/steeepaaaan/pdalife-morphe-patches/releases/download/v1.1.2/patches-1.1.2.mpp",
   "signature_download_url": "",
-  "version": "1.1.1"
+  "version": "1.1.2"
 }

@@ -16,9 +16,9 @@ The mod's own single-player modifications are **not** touched.
 ## Supported apps
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.1.1](https://github.com/steeepaaaan/pdalife-morphe-patches/releases/tag/v1.1.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;10 patches total
+> **[v1.1.2](https://github.com/steeepaaaan/pdalife-morphe-patches/releases/tag/v1.1.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;14 patches total
 <details open>
-<summary>📦 Slime Rancher&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<summary>📦 Slime Rancher&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -28,13 +28,14 @@ The mod's own single-player modifications are **not** touched.
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
+| [Neutralize PDALIFE JNI_OnLoad (universal)](#neutralize-pdalife-jni-onload-universal) | Universal patch: Patches libPDALIFE.so's JNI_OnLoad to return immediately without installing hooks. Prevents PDALIFE banner/toast from being set up. |  |
 | [Remove PDALIFE Application from manifest](#remove-pdalife-application-from-manifest) | Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. |  |
 | [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Keeps libPDALIFE.so so native onCreate methods resolve. |  |
 
 </details>
 
 <details open>
-<summary>📦 Subnautica&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<summary>📦 Subnautica&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -44,13 +45,14 @@ The mod's own single-player modifications are **not** touched.
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
+| [Neutralize PDALIFE JNI_OnLoad (universal)](#neutralize-pdalife-jni-onload-universal) | Universal patch: Patches libPDALIFE.so's JNI_OnLoad to return immediately without installing hooks. Prevents PDALIFE banner/toast from being set up. |  |
 | [Remove PDALIFE Application from manifest](#remove-pdalife-application-from-manifest) | Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. |  |
 | [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Keeps libPDALIFE.so so native onCreate methods resolve. |  |
 
 </details>
 
 <details open>
-<summary>📦 World of Goo 2&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<summary>📦 World of Goo 2&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -60,13 +62,14 @@ The mod's own single-player modifications are **not** touched.
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
+| [Neutralize PDALIFE JNI_OnLoad (universal)](#neutralize-pdalife-jni-onload-universal) | Universal patch: Patches libPDALIFE.so's JNI_OnLoad to return immediately without installing hooks. Prevents PDALIFE banner/toast from being set up. |  |
 | [Remove PDALIFE Application from manifest](#remove-pdalife-application-from-manifest) | Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. |  |
 | [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Keeps libPDALIFE.so so native onCreate methods resolve. |  |
 
 </details>
 
 <details open>
-<summary>📦 Don't Starve Pocket&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<summary>📦 Don't Starve Pocket&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -76,6 +79,7 @@ The mod's own single-player modifications are **not** touched.
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
+| [Neutralize PDALIFE JNI_OnLoad (universal)](#neutralize-pdalife-jni-onload-universal) | Universal patch: Patches libPDALIFE.so's JNI_OnLoad to return immediately without installing hooks. Prevents PDALIFE banner/toast from being set up. |  |
 | [Remove PDALIFE Application from manifest](#remove-pdalife-application-from-manifest) | Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. |  |
 | [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Keeps libPDALIFE.so so native onCreate methods resolve. |  |
 
