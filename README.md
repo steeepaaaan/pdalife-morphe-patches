@@ -15,12 +15,9 @@ The mod's own single-player modifications are **not** touched.
 
 ## Supported apps
 
-| App | Package | versionName | Confirmed working |
-|-----|---------|-------------|-------------------|
-| Slime Rancher | `com.playdigious.slimerancher` | 1.1.1103 | ✅ |
-| Subnautica | `com.unknownworlds.subnautica` | 1.22.83811 | ✅ |
-| World of Goo 2 | `com.twodboy.wog2` | 1.0.29878322 | ✅ |
-| Don't Starve Pocket | `com.kleientertainment.doNotStarvePocket` | 1.19.22 | ✅ |
+<!-- PATCHES_START EXPANDED -->
+
+<!-- PATCHES_END -->
 
 ## Installation
 
