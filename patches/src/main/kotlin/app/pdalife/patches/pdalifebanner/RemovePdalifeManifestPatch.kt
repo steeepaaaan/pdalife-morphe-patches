@@ -5,17 +5,18 @@ import app.morphe.patcher.patch.ApkFileType
 import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import org.w3c.dom.Element
-import kotlin.collections.firstOrNull
 
 /**
  * Targeted patch: Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml.
- * Default-enabled for the 4 confirmed games.
+ * default = false because removing it prevents System.loadLibrary("PDALIFE") from running,
+ * which causes UnsatisfiedLinkError for native onCreate methods in libPDALIFE.so.
+ * Use the universal version of this patch only if you know the app doesn't need the library.
  */
 @Suppress("unused")
 val removePdalifeManifestPatch = resourcePatch(
     name = "Remove PDALIFE Application from manifest",
     description = "Removes android:name=\"com.pdalife.PdaApplication\" from AndroidManifest.xml so the PDALIFE injector never runs.",
-    default = true
+    default = false
 ) {
     compatibleWith(
         Compatibility(
@@ -63,6 +64,8 @@ val removePdalifeManifestPatch = resourcePatch(
 /**
  * Universal patch: Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml.
  * Works on any app — enable manually in Morphe Manager.
+ * WARNING: May cause UnsatisfiedLinkError if the app's MainActivity.onCreate is a native
+ * method in libPDALIFE.so. Use RemovePdalifeConfigAssetsPatch instead for those apps.
  */
 @Suppress("unused")
 val removePdalifeManifestPatchUniversal = resourcePatch(

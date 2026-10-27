@@ -7,12 +7,20 @@ import app.morphe.patcher.patch.Compatibility
 
 /**
  * Targeted patch: Deletes the PDALIFE injector's encrypted config assets.
+ * 
+ * Keeps libPDALIFE.so in the APK so System.loadLibrary("PDALIFE") still resolves and
+ * native onCreate methods in MainActivity/Don'tStarveActivity don't crash with
+ * UnsatisfiedLinkError.
+ *
+ * Removing PDALIFE.conf means JNI_OnLoad finds no config and installs no hooks,
+ * so no banner/toast is shown. PDALIFE.bin is also dead config and is removed.
+ *
  * Default-enabled for the 4 confirmed games.
  */
 @Suppress("unused")
 val removePdalifeAssetsPatch = rawResourcePatch(
     name = "Remove PDALIFE config assets",
-    description = "Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK.",
+    description = "Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Keeps libPDALIFE.so so native onCreate methods resolve.",
     default = true
 ) {
     compatibleWith(
@@ -57,11 +65,12 @@ val removePdalifeAssetsPatch = rawResourcePatch(
 /**
  * Universal patch: Deletes the PDALIFE injector's encrypted config assets.
  * Works on any app — enable manually in Morphe Manager.
+ * Keeps libPDALIFE.so so native onCreate methods don't crash with UnsatisfiedLinkError.
  */
 @Suppress("unused")
 val removePdalifeAssetsPatchUniversal = rawResourcePatch(
     name = "Remove PDALIFE config assets (universal)",
-    description = "Universal patch: Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Works on any APK.",
+    description = "Universal patch: Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Keeps libPDALIFE.so so native onCreate methods resolve. Works on any APK.",
     default = false
 ) {
     execute {
