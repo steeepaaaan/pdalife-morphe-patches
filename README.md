@@ -16,6 +16,70 @@ The mod's own single-player modifications are **not** touched.
 ## Supported apps
 
 <!-- PATCHES_START EXPANDED -->
+> **[v1.0.0](https://github.com/steeepaaaan/pdalife-morphe-patches/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;8 patches total
+<details open>
+<summary>📦 Slime Rancher&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 1.1.1103 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Remove PDALIFE Application from manifest](#remove-pdalife-application-from-manifest) | Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. |  |
+| [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. |  |
+
+</details>
+
+<details open>
+<summary>📦 Subnautica&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 1.22.83811 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Remove PDALIFE Application from manifest](#remove-pdalife-application-from-manifest) | Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. |  |
+| [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. |  |
+
+</details>
+
+<details open>
+<summary>📦 World of Goo 2&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 1.0.29878322 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Remove PDALIFE Application from manifest](#remove-pdalife-application-from-manifest) | Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. |  |
+| [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. |  |
+
+</details>
+
+<details open>
+<summary>📦 Don't Starve Pocket&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 1.19.22 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Remove PDALIFE Application from manifest](#remove-pdalife-application-from-manifest) | Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. |  |
+| [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. |  |
+
+</details>
 
 <!-- PATCHES_END -->
 

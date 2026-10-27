@@ -1,0 +1,12 @@
+## 1.0.0 (2026-10-27)
+
+### 🐛 Bug Fixes
+
+* Add PATCHES_START/PATCHES_END markers to README ([9c72cab](https://github.com/steeepaaaan/pdalife-morphe-patches/commit/9c72cab93e668ef304cf60bb8f9bc0593e58d20a))
+* Make gradlew executable for CI ([ceb04a3](https://github.com/steeepaaaan/pdalife-morphe-patches/commit/ceb04a3cb28459fb04394a6f8df0bf9452047e7d))
+
+### ✨ New Features
+
+* Add universal patch option and remove Shovel Knight Dig ([941b065](https://github.com/steeepaaaan/pdalife-morphe-patches/commit/941b065f4293a0d1db9909bc7340b24bfa814995))
+* Initial PDALIFE banner remover patch ([929dc64](https://github.com/steeepaaaan/pdalife-morphe-patches/commit/929dc64e2916aa596944d0212ad4e31814b078a6))
+* Trigger release ([be039d0](https://github.com/steeepaaaan/pdalife-morphe-patches/commit/be039d02db784e70142de83c7fa98862a438eb97))
