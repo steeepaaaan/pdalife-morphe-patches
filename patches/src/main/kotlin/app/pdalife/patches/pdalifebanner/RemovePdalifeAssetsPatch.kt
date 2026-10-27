@@ -10,7 +10,7 @@ import app.pdalife.patches.pdalifebanner.PdalifeCompatibility.ALL
  * native injector cannot read its configuration and cannot show the banner/toast.
  */
 // Set to true to make this patch universal (works on any app, no version/package restrictions).
-val universalAssetsPatch = false
+val universalAssetsPatch = true
 
 @Suppress("unused")
 val removePdalifeAssetsPatch = rawResourcePatch(

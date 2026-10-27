@@ -13,7 +13,7 @@ import org.w3c.dom.Element
  * Application class, the library is never loaded, and no banner/toast appears.
  */
 // Set to true to make this patch universal (works on any app, no version/package restrictions).
-val universalManifestPatch = false
+val universalManifestPatch = true
 
 @Suppress("unused")
 val removePdalifeManifestPatch = resourcePatch(
