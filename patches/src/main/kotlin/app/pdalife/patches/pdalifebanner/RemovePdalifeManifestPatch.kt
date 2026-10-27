@@ -27,12 +27,12 @@ val removePdalifeManifestPatch = resourcePatch(
 
     execute {
         // Parse AndroidManifest.xml as a DOM document.
-        val doc = document("AndroidManifest.xml")
-
-        // Find the <application> element and remove android:name.
-        val appElem = doc.getElementsByTagName("application").item(0) as? Element
-        if (appElem != null) {
-            appElem.removeAttribute("android:name")
+        document("AndroidManifest.xml").use { doc ->
+            // Find the <application> element and remove android:name.
+            val appElem = doc.getElementsByTagName("application").item(0) as? Element
+            if (appElem != null) {
+                appElem.removeAttribute("android:name")
+            }
         }
     }
 }
