@@ -16,7 +16,7 @@ The mod's own single-player modifications are **not** touched.
 ## Supported apps
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.1.2](https://github.com/steeepaaaan/pdalife-morphe-patches/releases/tag/v1.1.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;14 patches total
+> **[v1.1.3](https://github.com/steeepaaaan/pdalife-morphe-patches/releases/tag/v1.1.3)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;14 patches total
 <details open>
 <summary>📦 Slime Rancher&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
