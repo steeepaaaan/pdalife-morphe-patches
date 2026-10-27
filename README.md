@@ -22,13 +22,11 @@ The mod's own single-player modifications are **not** touched.
 | World of Goo 2 | `com.twodboy.wog2` | 1.0.29878322 | ✅ |
 | Don't Starve Pocket | `com.kleientertainment.doNotStarvePocket` | 1.19.22 | ✅ |
 
-Shovel Knight Dig is **not covered** — it has no PDALIFE injection artifacts.
-
 ## Installation
 
 ### Using Morphe Manager (recommended)
 
-1. Download the latest `patches.mpp` from the [Releases](https://github.com/YOUR_USERNAME/pdalife-banner-remover/releases) page.
+1. Download the latest `patches.mpp` from the [Releases](https://github.com/steeepaaaan/pdalife-morphe-patches/releases) page.
 2. Open **Morphe Manager** → Patch sources → add the `.mpp` as a **local patch source**.
 3. Select your pdalife mod APK (for Subnautica, extract and patch `base.apk` from the split set).
 4. Enable both patches:
@@ -48,7 +46,7 @@ Requirements:
 
 ```powershell
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/pdalife-banner-remover.git
+git clone https://github.com/steeepaaaan/pdalife-morphe-patches.git
 cd pdalife-banner-remover
 
 # Create gradle.properties (from the template) with your credentials:
