@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "patches": [
     {
       "name": "Remove PDALIFE Application from manifest",
@@ -13,7 +13,7 @@
           "name": "Slime Rancher",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#FF0045",
+          "appIconColor": null,
           "signatures": null,
           "formFactor": "MOBILE",
           "targets": [
@@ -31,7 +31,7 @@
           "name": "Subnautica",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#0045FF",
+          "appIconColor": null,
           "signatures": null,
           "formFactor": "MOBILE",
           "targets": [
@@ -49,7 +49,7 @@
           "name": "World of Goo 2",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#FF4500",
+          "appIconColor": null,
           "signatures": null,
           "formFactor": "MOBILE",
           "targets": [
@@ -67,7 +67,7 @@
           "name": "Don't Starve Pocket",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#45FF00",
+          "appIconColor": null,
           "signatures": null,
           "formFactor": "MOBILE",
           "targets": [
@@ -84,6 +84,14 @@
       "options": []
     },
     {
+      "name": "Remove PDALIFE Application from manifest (universal)",
+      "description": "Universal patch: Removes android:name=\"com.pdalife.PdaApplication\" from AndroidManifest.xml so the PDALIFE injector never runs. Works on any APK.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": null,
+      "options": []
+    },
+    {
       "name": "Remove PDALIFE config assets",
       "description": "Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK.",
       "default": true,
@@ -94,7 +102,7 @@
           "name": "Slime Rancher",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#FF0045",
+          "appIconColor": null,
           "signatures": null,
           "formFactor": "MOBILE",
           "targets": [
@@ -112,7 +120,7 @@
           "name": "Subnautica",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#0045FF",
+          "appIconColor": null,
           "signatures": null,
           "formFactor": "MOBILE",
           "targets": [
@@ -130,7 +138,7 @@
           "name": "World of Goo 2",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#FF4500",
+          "appIconColor": null,
           "signatures": null,
           "formFactor": "MOBILE",
           "targets": [
@@ -148,7 +156,7 @@
           "name": "Don't Starve Pocket",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#45FF00",
+          "appIconColor": null,
           "signatures": null,
           "formFactor": "MOBILE",
           "targets": [
@@ -162,6 +170,14 @@
           ]
         }
       ],
+      "options": []
+    },
+    {
+      "name": "Remove PDALIFE config assets (universal)",
+      "description": "Universal patch: Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Works on any APK.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": null,
       "options": []
     }
   ]
