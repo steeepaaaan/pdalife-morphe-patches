@@ -8,11 +8,11 @@ pluginManagement {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/MorpheApp/registry")
             credentials {
-                username = providers.gradleProperty("gpr.user").orNull
-                    ?: System.getenv("GPR_USER")
+                username = providers.gradleProperty("gpr.user").orNull?.takeIf { it.isNotBlank() }
+                    ?: System.getenv("GPR_USER")?.takeIf { it.isNotBlank() }
                     ?: System.getenv("GITHUB_ACTOR")
-                password = providers.gradleProperty("gpr.key").orNull
-                    ?: System.getenv("GPR_KEY")
+                password = providers.gradleProperty("gpr.key").orNull?.takeIf { it.isNotBlank() }
+                    ?: System.getenv("GPR_KEY")?.takeIf { it.isNotBlank() }
                     ?: System.getenv("GITHUB_TOKEN")
             }
         }
