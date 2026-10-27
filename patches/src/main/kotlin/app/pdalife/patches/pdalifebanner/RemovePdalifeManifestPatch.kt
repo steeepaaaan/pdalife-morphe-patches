@@ -19,7 +19,7 @@ val universalManifestPatch = true
 val removePdalifeManifestPatch = resourcePatch(
     name = "Remove PDALIFE Application from manifest",
     description = "Removes android:name=\"com.pdalife.PdaApplication\" from AndroidManifest.xml so the PDALIFE injector never runs.",
-    default = true
+    default = false
 ) {
     if (!universalManifestPatch) {
         ALL.forEach { compatibleWith(it) }

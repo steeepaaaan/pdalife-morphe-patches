@@ -16,7 +16,7 @@ val universalAssetsPatch = true
 val removePdalifeAssetsPatch = rawResourcePatch(
     name = "Remove PDALIFE config assets",
     description = "Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK.",
-    default = true
+    default = false
 ) {
     if (!universalAssetsPatch) {
         ALL.forEach { compatibleWith(it) }
