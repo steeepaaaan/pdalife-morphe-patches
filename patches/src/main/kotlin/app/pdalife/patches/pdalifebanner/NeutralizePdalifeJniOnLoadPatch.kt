@@ -58,18 +58,11 @@ val neutralizePdalifeJniOnLoadPatch = rawResourcePatch(
     )
 
     execute {
-        // Patch libPDALIFE.so's JNI_OnLoad to return immediately without installing hooks.
-        // We patch the first instruction of JNI_OnLoad to: mov w0, #0; ret (return 0)
-        // This prevents hook installation while keeping libPDALIFE.so loaded.
         val soFile = java.io.File("lib/arm64-v8a/libPDALIFE.so")
         if (soFile.exists()) {
             val soBytes = soFile.readBytes()
-            // Find JNI_OnLoad symbol offset in ELF dynamic symbol table
             val jniOnLoadOffset = findJniOnLoadOffset(soBytes)
             if (jniOnLoadOffset != -1) {
-                // Patch first 8 bytes of JNI_OnLoad: mov w0, #0; ret
-                // mov w0, #0 = 0x20008052 (little-endian: 52 80 00 20)
-                // ret        = 0xd65f03c0 (little-endian: c0 03 5f d6)
                 soBytes[jniOnLoadOffset] = 0x52.toByte()
                 soBytes[jniOnLoadOffset + 1] = 0x80.toByte()
                 soBytes[jniOnLoadOffset + 2] = 0x00.toByte()
@@ -82,23 +75,19 @@ val neutralizePdalifeJniOnLoadPatch = rawResourcePatch(
             }
         }
     }
+}
 
-    private fun findJniOnLoadOffset(soBytes: ByteArray): Int {
-        // Simple ELF dynamic symbol table scan for "JNI_OnLoad"
-        // This is a best-effort scan; may not find the symbol in all cases
-        val jniOnLoadStr = "JNI_OnLoad".toByteArray()
-        for (i in 0 until soBytes.size - jniOnLoadStr.size) {
-            var match = true
-            for (j in jniOnLoadStr.indices) {
-                if (soBytes[i + j] != jniOnLoadStr[j]) {
-                    match = false
-                    break
-                }
-            }
-            if (match) {
-                return i
+private fun findJniOnLoadOffset(soBytes: ByteArray): Int {
+    val jniOnLoadStr = "JNI_OnLoad".toByteArray()
+    for (i in 0 until soBytes.size - jniOnLoadStr.size) {
+        var match = true
+        for (j in jniOnLoadStr.indices) {
+            if (soBytes[i + j] != jniOnLoadStr[j]) {
+                match = false
+                break
             }
         }
-        return -1
+        if (match) return i
     }
+    return -1
 }
