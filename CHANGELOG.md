@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/steeepaaaan/pdalife-morphe-patches/compare/v1.1.0...v1.1.1) (2026-10-27)
+
+### 🐛 Bug Fixes
+
+* Keep libPDALIFE.so, remove only PDALIFE.conf/assets to prevent UnsatisfiedLinkError ([48241fb](https://github.com/steeepaaaan/pdalife-morphe-patches/commit/48241fbe0c044f71a6ffcd112a73adf60a26f1bc))
+
 ## [1.1.0](https://github.com/steeepaaaan/pdalife-morphe-patches/compare/v1.0.0...v1.1.0) (2026-10-27)
 
 ### 🐛 Bug Fixes

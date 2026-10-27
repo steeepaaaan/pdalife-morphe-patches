@@ -16,7 +16,7 @@ The mod's own single-player modifications are **not** touched.
 ## Supported apps
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.1.0](https://github.com/steeepaaaan/pdalife-morphe-patches/releases/tag/v1.1.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;10 patches total
+> **[v1.1.1](https://github.com/steeepaaaan/pdalife-morphe-patches/releases/tag/v1.1.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;10 patches total
 <details open>
 <summary>📦 Slime Rancher&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>
@@ -29,7 +29,7 @@ The mod's own single-player modifications are **not** touched.
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Remove PDALIFE Application from manifest](#remove-pdalife-application-from-manifest) | Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. |  |
-| [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. |  |
+| [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Keeps libPDALIFE.so so native onCreate methods resolve. |  |
 
 </details>
 
@@ -45,7 +45,7 @@ The mod's own single-player modifications are **not** touched.
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Remove PDALIFE Application from manifest](#remove-pdalife-application-from-manifest) | Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. |  |
-| [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. |  |
+| [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Keeps libPDALIFE.so so native onCreate methods resolve. |  |
 
 </details>
 
@@ -61,7 +61,7 @@ The mod's own single-player modifications are **not** touched.
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Remove PDALIFE Application from manifest](#remove-pdalife-application-from-manifest) | Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. |  |
-| [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. |  |
+| [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Keeps libPDALIFE.so so native onCreate methods resolve. |  |
 
 </details>
 
@@ -77,7 +77,7 @@ The mod's own single-player modifications are **not** touched.
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Remove PDALIFE Application from manifest](#remove-pdalife-application-from-manifest) | Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. |  |
-| [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. |  |
+| [Remove PDALIFE config assets](#remove-pdalife-config-assets) | Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Keeps libPDALIFE.so so native onCreate methods resolve. |  |
 
 </details>
 
@@ -88,7 +88,7 @@ The mod's own single-player modifications are **not** touched.
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Remove PDALIFE Application from manifest (universal)](#remove-pdalife-application-from-manifest-universal) | Universal patch: Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. Works on any APK. |  |
-| [Remove PDALIFE config assets (universal)](#remove-pdalife-config-assets-universal) | Universal patch: Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Works on any APK. |  |
+| [Remove PDALIFE config assets (universal)](#remove-pdalife-config-assets-universal) | Universal patch: Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Keeps libPDALIFE.so so native onCreate methods resolve. Works on any APK. |  |
 
 </details>
 
