@@ -18,8 +18,7 @@ Because all DEXes in pdalife mods are encrypted at rest (pairip protection), the
 ## Supported apps
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.2.0](https://github.com/steeepaaaan/pdalife-morphe-patches/releases/tag/v1.2.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;10 patches total
-
+> **[v1.1.3](https://github.com/steeepaaaan/pdalife-morphe-patches/releases/tag/v1.1.3)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;14 patches total
 <details open>
 <summary>📦 Slime Rancher&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
@@ -94,7 +93,7 @@ Because all DEXes in pdalife mods are encrypted at rest (pairip protection), the
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Neutralize PDALIFE JNI_OnLoad (universal)](#neutralize-pdalife-jni-onload-universal) | Universal patch: Patches libPDALIFE.so's JNI_OnLoad to return immediately without installing hooks. Works on any APK. |  |
+| [Remove PDALIFE Application from manifest (universal)](#remove-pdalife-application-from-manifest-universal) | Universal patch: Removes android:name="com.pdalife.PdaApplication" from AndroidManifest.xml so the PDALIFE injector never runs. Works on any APK. |  |
 | [Remove PDALIFE config assets (universal)](#remove-pdalife-config-assets-universal) | Universal patch: Deletes assets/PDALIFE.conf and assets/PDALIFE.bin from the APK. Keeps libPDALIFE.so so native onCreate methods resolve. Works on any APK. |  |
 
 </details>
